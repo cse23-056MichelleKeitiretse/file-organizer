@@ -6,7 +6,7 @@
 
 A lightweight Python script that automatically sorts files in a specified directory into categorized subfolders based on their file extensions. No more messy downloads folder!
 
-![Demo](images/demo-before-after.png) <!-- Replace with your own screenshot if available -->
+
 
 ## ✨ Features
 
