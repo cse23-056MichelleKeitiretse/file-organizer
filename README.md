@@ -4,67 +4,112 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-A lightweight Python script that automatically sorts files in a specified directory into categorized subfolders based on their file extensions. No more messy downloads folder!
+A lightweight **Python script** that automatically sorts files in a directory into categorized subfolders based on their file extensions.
 
+No more messy **Downloads** folder. 🎉
 
+---
 
-## ✨ Features
+# ✨ Features
 
-- **Smart Categorization** – Sorts files into predefined folders: Images, Documents, Audio, Video, Archives, Code, and Others.
-- **Safe Operation** – Only moves files; never deletes anything.
-- **Customizable** – Easily add or remove file extensions by editing a simple dictionary.
-- **CLI Friendly** – Provide a target folder as a command-line argument, or let it organize the current directory.
-- **Lightweight** – Pure Python, no external dependencies.
+- 🧠 **Smart Categorization**  
+  Automatically sorts files into folders like Images, Documents, Audio, Video, Archives, Code, and Others.
 
-## 📦 Installation
+- 🔒 **Safe Operation**  
+  Files are **only moved**, never deleted.
 
-1. **Clone the repository** (or download the script directly):
-   ```bash
-   git clone https://github.com/yourusername/file-organizer.git
-   cd file-organizer
-Ensure Python 3 is installed:
+- ⚙️ **Customizable**  
+  Easily add or remove file extensions using a simple dictionary.
 
-bash
-python --version   # Should be 3.x
-That's it – no additional packages required.
+- 💻 **CLI Friendly**  
+  Organize any folder directly from the command line.
 
-🚀 Usage
-Run the script from the terminal, specifying the folder you want to organize:
+- ⚡ **Lightweight**  
+  Pure Python with **zero external dependencies**.
 
-bash
+---
+
+# 📦 Installation
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/file-organizer.git
+cd file-organizer
+```
+
+### 2️⃣ Ensure Python 3 is Installed
+
+```bash
+python --version
+```
+
+Expected output:
+
+```
+Python 3.x.x
+```
+
+✅ No additional packages required.
+
+---
+
+# 🚀 Usage
+
+Run the script and specify the folder you want to organize:
+
+```bash
 python organizer.py "C:\Users\YourName\Downloads"
-If you omit the folder path, it will organize the current working directory:
+```
 
-bash
+### Organize the Current Directory
+
+If no path is provided, the script will organize the **current working directory**.
+
+```bash
 python organizer.py
-Example
-Before:
+```
 
-text
+---
+
+# 📂 Example
+
+### Before
+
+```
 Downloads/
-  ├── holiday.jpg
-  ├── report.pdf
-  ├── song.mp3
-  ├── script.py
-  └── archive.zip
-After running:
+├── holiday.jpg
+├── report.pdf
+├── song.mp3
+├── script.py
+└── archive.zip
+```
 
-text
+### After
+
+```
 Downloads/
-  ├── Images/
-  │   └── holiday.jpg
-  ├── Documents/
-  │   └── report.pdf
-  ├── Audio/
-  │   └── song.mp3
-  ├── Code/
-  │   └── script.py
-  └── Archives/
-      └── archive.zip
-⚙️ Customization
-You can easily change which file extensions belong to which category. Open organizer.py and locate the file_types dictionary:
+├── Images/
+│   └── holiday.jpg
+├── Documents/
+│   └── report.pdf
+├── Audio/
+│   └── song.mp3
+├── Code/
+│   └── script.py
+└── Archives/
+    └── archive.zip
+```
 
-python
+---
+
+# ⚙️ Customization
+
+You can modify which extensions belong to which category.
+
+Open **`organizer.py`** and edit the `file_types` dictionary:
+
+```python
 file_types = {
     'Images': ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg', '.webp'],
     'Documents': ['.pdf', '.docx', '.doc', '.txt', '.xlsx', '.pptx', '.md', '.odt'],
@@ -72,26 +117,61 @@ file_types = {
     'Video': ['.mp4', '.avi', '.mkv', '.mov', '.wmv', '.flv'],
     'Archives': ['.zip', '.tar', '.gz', '.rar', '.7z', '.bz2'],
     'Code': ['.py', '.js', '.html', '.css', '.cpp', '.java', '.sh', '.rb', '.php'],
-    'Others': []  # everything else
+    'Others': []
 }
-Add or remove extensions, or even create new categories. The script will automatically create the necessary folders.
+```
 
-🤝 Contributing
-Contributions, issues, and feature requests are welcome!
-Feel free to check the issues page.
+You can also:
 
-Fork the project
+- Add new categories
+- Remove unwanted file types
+- Create custom folder groups
 
-Create your feature branch (git checkout -b feature/AmazingFeature)
+The script will **automatically create folders** if they do not exist.
 
-Commit your changes (git commit -m 'Add some amazing feature')
+---
 
-Push to the branch (git push origin feature/AmazingFeature)
+# 🤝 Contributing
 
-Open a Pull Request
+Contributions are welcome!
 
-📄 License
-Distributed under the MIT License. See LICENSE for more information.
+1. **Fork the project**
+2. Create your feature branch
 
-☕ Support
-If you find this project useful, consider giving it a ⭐ on GitHub – it helps others discover it!
+```bash
+git checkout -b feature/AmazingFeature
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add some amazing feature"
+```
+
+4. Push to the branch
+
+```bash
+git push origin feature/AmazingFeature
+```
+
+5. Open a **Pull Request**
+
+---
+
+# 📄 License
+
+Distributed under the **MIT License**.
+
+See the `LICENSE` file for more information.
+
+---
+
+# ⭐ Support
+
+If you find this project useful:
+
+- Give it a **star ⭐ on GitHub**
+- Share it with others
+- Contribute improvements
+
+It helps the project grow!
